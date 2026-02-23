@@ -20,7 +20,7 @@ http.createServer(function (req, res) {
   res.end();
 }).listen(8080);*/
 
-const https = require('https');
+/*const https = require('https');
 
 https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
   let data = '';
@@ -35,4 +35,8 @@ https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
 
 }).on('error', (err) => {
   console.log("Error: " + err.message);
-});
+});*/
+
+const myModule = require('./my-module.js');
+
+console.log(myModule.myFunction());
